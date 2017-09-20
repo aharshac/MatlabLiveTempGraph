@@ -1,12 +1,12 @@
 function PlotLiveData(device)
-    % Prevnt this script from running
+    % Prevent this script from running
     if nargin == 0
         return; 
     end
 
     try
         % Get current parallel pool
-        p = gcp();
+        parallelPool = gcp();
         
         % Initialize figure
         fig = figure;
@@ -56,7 +56,7 @@ function PlotLiveData(device)
             if mod(second(datetime('now')), 20) < 1
                 % Update only once
                 if(iotWritten == false)
-                    parfeval(p, @IotWrite, 0, temp);
+                    parfeval(parallelPool, @IotWrite, 0, temp);
                     iotWritten = true;
                 end
             else
@@ -70,4 +70,11 @@ function PlotLiveData(device)
     
     % Closing
     ShowInfo('Figure closed!', 0);
+    
+    % Delete parallel pool
+    try
+        delete(parallelPool);
+    catch exception
+        disp(exception);
+    end
 end

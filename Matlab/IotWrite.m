@@ -1,6 +1,17 @@
 function IotWrite(temperature)
+    % Prevnt this script from running
+    if nargin == 0
+        return; 
+    end
+    
+    % ThingSpeak channel info and write API key
     channelID = 334190;
     writeKey  = 'Q3MGW0S6LZVX8OY6';
-    % Upload temerature and UNIX timestamp
-    thingSpeakWrite(channelID, [temperature posixtime(datetime('now'))], 'WriteKey', writeKey);
+    
+    % Upload temerature
+    try
+        thingSpeakWrite(channelID, temperature, 'WriteKey', writeKey);  % posixtime(datetime('now'))
+    catch exception
+        disp(exception);
+    end
 end

@@ -1,6 +1,7 @@
 $( document ).ready(function () {
     //  UI
     var ui_online_indicator = $('#state');
+    var ui_secondary = $('#secondary');
     var ui_temperature = $('#temperature');
     var ui_time = $('#time');
     var timer = setInterval(readTemperature, 20 * 1000);
@@ -23,15 +24,15 @@ $( document ).ready(function () {
                     var temp = obj['feeds'][0]['field1'];
                     var created_at = moment(obj['feeds'][0]['created_at']).utc();
                     var now = moment().utc();
-                    var delta = now.diff(created_at, 'minutes');
+                    var delta = now.diff(created_at, 'seconds');    // difference between now and last update
                     
                     // console.log(created_at);
                     // console.log(now);
                     // console.log(delta);
                     
-                    if (delta > 1) {
+                    if (delta > 60) {
                         setOnlineState(false);
-                        setTime(false);
+                        //setTime(false);
                     } else {
                         if ($.isNumeric(temp)) {
                             temp = parseFloat(temp).toFixed(2);
@@ -40,6 +41,8 @@ $( document ).ready(function () {
                             setTime(created_at);
                         }    
                     }
+                } else {
+                    setOnlineState(false);
                 }
             }
         );
@@ -52,6 +55,9 @@ $( document ).ready(function () {
         
         if (!online) {
             setTemperature(false);
+            ui_secondary.hide();
+        } else {
+            ui_secondary.show();
         }
     }
     

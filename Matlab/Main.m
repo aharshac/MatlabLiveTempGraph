@@ -1,3 +1,16 @@
+% 
+% Matlab Live Temperature Graph
+% SP Assignment 2
+% 
+% Credits:
+%   Harsha Alva
+%   Prathik M. P.
+%   Nishan Sequeira
+% 
+% https://github.com/aharshac/MatlabLiveTempGraph
+%
+
+
 clc;
 clear;
 disp('SP Assignment 2');
@@ -13,7 +26,7 @@ end
 
 % Iterate COM ports
 % Evaluate if Arduino and try connection
-for i=listCOM
+for i = listCOM
     try
         % Try evaluation of COM device
         ShowInfo(strcat("Trying device ", i{1}), 0);

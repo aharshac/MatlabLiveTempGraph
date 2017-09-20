@@ -1,7 +1,7 @@
 % Show info
 % Display Windows MsgBox if exactly one argument (message) is supplied
 function ShowInfo(message, varargin)
-    % Prevnt this script from running
+    % Prevent this script from running
     if nargin == 0
         return; 
     end
