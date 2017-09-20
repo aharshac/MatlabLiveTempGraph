@@ -1,0 +1,148 @@
+body {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.footer {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+/* Custom page header */
+.header {
+  padding-bottom: 1rem;
+  border-bottom: .05rem solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 3rem;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 1.5rem;
+  color: #777;
+  border-top: .05rem solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 50%;
+  }
+}
+.container-narrow > hr {
+  margin: 2rem 0;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 2rem;
+  }
+}
+
+/*
+html, body {
+  width: 100%;
+  /*height: 100%;
+  position: relative;
+}
+
+body {
+  background: #eee;
+  margin: 0;
+}
+
+.header {
+  display: block;
+  text-align: center;
+  padding: 25px;
+  margin: auto;
+
+}
+
+.header h1, .header img{
+   display:inline-block;
+   vertical-align: middle;
+}
+
+.header h1 {
+  font-size: 36px;
+  margin: 0 !important;
+  line-height: 1 !important;
+}
+
+.header img {
+  width: 36px;
+  height: 36px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+th, td {
+  padding: 5px;
+}
+
+.row {
+  padding: 10px;
+}
+*/
+
+.nav-link.img {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.icon {
+  width: 36px;
+  height: 36px;
+}
+
+.label {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #868e96;
+}
+
+.value {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.status {
+    font-size: 2rem;
+}
+
+.online {
+    color: #3c763d;
+}
+
+.offline {
+    color: #a94442;
+}
+
+.temperature {
+    font-size: 2rem;
+}
+
+.time {
+    font-size: 1rem;
+    color: #666;
+    text-transform: none;
+}
+

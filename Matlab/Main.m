@@ -1,6 +1,6 @@
 clc;
 clear;
-disp("SP Assignment 2");
+disp('SP Assignment 2');
 
 % Get list of all COM ports
 listCOM = seriallist();

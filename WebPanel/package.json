@@ -1,0 +1,15 @@
+{
+  "name": "smart-lock-web-panel",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "//": "serve -s src -p 3000",
+    "test": "node index.js"
+  },
+  "author": "Harsha Alva",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  }
+}
