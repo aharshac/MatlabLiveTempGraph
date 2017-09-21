@@ -34,7 +34,6 @@ for i = listCOM
     catch exception
         % Not Arduino
         devArduino = [];
-        % msgbox('Could not connect to Arduino', 'Error', 'error');
     end
 end    
 
