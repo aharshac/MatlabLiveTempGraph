@@ -18,7 +18,7 @@ https://youtu.be/w5Vl4pejiA0
 &nbsp;
 
 ## Prototype
-
+![prototype](https://github.com/aharshac/MatlabLiveTempGraph/raw/master/Prototype/prototype.jpg)
 &nbsp;
 
 ##  Matlab Script
