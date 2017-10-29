@@ -1,3 +1,17 @@
+% 
+% Matlab Live Temperature Graph
+% SP Project
+% 
+% Credits:
+%   Harsha Alva
+%   Prathik M. P.
+%   Nishan Sequeira
+% 
+% https://github.com/aharshac/MatlabLiveTempGraph
+%
+
+
+% Plot live temperature data as a Matlab figure
 function PlotLiveData(device)
     % Prevent this script from running
     if nargin == 0

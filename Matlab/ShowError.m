@@ -1,3 +1,16 @@
+% 
+% Matlab Live Temperature Graph
+% SP Project
+% 
+% Credits:
+%   Harsha Alva
+%   Prathik M. P.
+%   Nishan Sequeira
+% 
+% https://github.com/aharshac/MatlabLiveTempGraph
+%
+
+
 % Show error
 % Display Windows MsgBox if exactly one argument (message) is supplied
 function ShowError(message)
@@ -7,5 +20,5 @@ function ShowError(message)
     end
 
     disp(strcat("Error: ", message));
-    msgbox(message, 'SP Assignment 2', 'error');
+    msgbox(message, 'SP Project - Matlab Live Temperature Graph', 'error');
 end

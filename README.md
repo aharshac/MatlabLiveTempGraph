@@ -2,7 +2,10 @@
 
 Matlab script to show the real-time temperature from an LM35 temperature sensor through an Arduino.
 
-Assignent for Signal Processing subject of [M. Tech. - Industrial Automation & Robotics](https://manipal.edu/mit/programs/program-list/mtech/mtech-in-industrial-automation-robotics-manipal-university.html) course at [MIT, Manipal](https://manipal.edu/mit.html).
+Project for Signal Processing subject of [M. Tech. - Industrial Automation & Robotics](https://manipal.edu/mit/programs/program-list/mtech/mtech-in-industrial-automation-robotics-manipal-university.html) course handled by Ms. Ansu Mathew at [MIT, Manipal](https://manipal.edu/mit.html).
+
+![Motion screencap](https://media.giphy.com/media/xT9IgNNT9yq9OOXlL2/giphy.gif)    
+https://youtu.be/w5Vl4pejiA0
 
 &nbsp;
 
@@ -14,8 +17,16 @@ Assignent for Signal Processing subject of [M. Tech. - Industrial Automation & R
 
 &nbsp;
 
+## Prototype
+
+&nbsp;
+
 ##  Matlab Script
 Run `Matlab/Main.m` in Matlab.
+
+### Prerequisites
+1. MATLAB Support Package for Arduino Hardware
+2. ThingSpeak Support Toolbox
 
 &nbsp;
 

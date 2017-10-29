@@ -1,6 +1,6 @@
 % 
 % Matlab Live Temperature Graph
-% SP Assignment 2
+% SP Project
 % 
 % Credits:
 %   Harsha Alva
@@ -10,10 +10,9 @@
 % https://github.com/aharshac/MatlabLiveTempGraph
 %
 
-
 clc;
 clear;
-disp('SP Assignment 2');
+disp('SP Project - Matlab Live Temperature Graph');
 
 % Get list of all COM ports
 listCOM = seriallist();
